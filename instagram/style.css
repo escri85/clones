@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(189, 156, 156, 0.3);
+    min-height: 50px;
+    position: fixed;
+    background: white;
+    
+}
+.header-nav{
+    width: 60%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    
+}
+.header-nav a img{
+    width: 6rem;
+    height: 2rem;
+    margin-left: -2rem;
+}
+.header-nav input{
+    text-align: center;
+    border: 2px solid rgb(189, 156, 156, 0.3);
+    border-radius: 2px;
+    font-size: 19px;
+}
+
+.iconos a{   
+    text-decoration: none;
+    margin: 0 9px;
+    color: black;
+    background: white;
+}
+.iconos a span{
+    font-size: 24px;
+}
+.menu{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: aliceblue;
+  
+}
+.menu-perfiles{
+    margin-top: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 19rem;
+    background-color: aliceblue;
+  
+}
+.perfiles{
+    margin-top: 1rem;
+    border: 1px solid rgba(156, 189, 172, 0.918);
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    border-radius: 0.2rem;
+
+}
+.perfiles a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0.8rem;
+    font-size: 13px;
+    
+}
+
+.perfiles a img{
+     width: 4rem;
+     height: 4rem;
+     border-radius: 100%;
+     border: 1px solid white;
+    
+     
+}
+.perfiles a::after{
+    content: "";
+    border: 1px solid #333;
+
+}
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.nav-article{
+    display:flex ;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid rgba(156, 189, 172, 0.918);
+    background: white;
+}
+.nav-article .perfil a img{
+    width: 3rem;
+     height: 3rem;
+     border-radius: 100%;
+     padding: 1rem;
+}
+.nav-article .perfil a:hover{
+    border-bottom: 1px solid black;
+}
+.nav-article .perfil a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-article button{
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: none;
+    background: white;
+}
+.comentarios-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.comentarios-logos a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: black;
+}
+.comenatrios-logos-reacciones a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: black;
+}
+.comentarios-mensajes p{
+    text-transform: capitalize;
+}
+.comentarios-mensajes  a{
+    text-decoration: none;
+    font-weight:bolder;
+    color: black;
+    padding: 0.5rem;
+}
+.comentarios-añadir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid rgba(156, 189, 172, 0.918);
+    margin-top: 1rem;
+}    
+.comentarios-añadir a{
+    text-decoration:none;
+    color: black;
+}
+.comentarios-añadir a span{
+    font-size: 1.5rem;
+}
+.comentarios-añadir input{
+    border: none;
+}
+.comentarios-añadir button{
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+/* ASIDE */
+.aside{
+    margin: 6rem 4rem;
+    width: 20%;
+    position: fixed;
+    right: 18rem;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nombre-pefil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .perfil a{
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.aside .perfil a img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.aside .perfil a{
+    color: black;
+}
+.aside .amigos .perfil a img{
+    width: 2rem;
+    height: 2rem;
+}
+@media screen and (max-width: 1460px){
+    .aside{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .header-nav input{
+        display: none;
+    }
+}
